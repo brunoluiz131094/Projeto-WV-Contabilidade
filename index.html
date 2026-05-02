@@ -1,73 +1,242 @@
-
-
+<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WVGA Contabilidade e Consultoria</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    </head>
-    <body>
-    
-        <header class="header">
-            <div class="container">
-                <h1 class="logo">WVGA Contabilidade e Consultoria</h1>
-            </div>
-        </header>
-    
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-image-container">
-                    <img src="02.webp" alt="Imagem de Contabilidade" class="hero-image">
-                </div>
-                <div class="services">
-                    <h2>Contabilidade em Geral</h2>
-                    <ul class="services-list">
-                        <li> Assessoria Contábil</li>
-                        <li> Departamento de Pessoal</li>
-                        <li> Recursos Humanos</li>
-                        <li> Abertura de MEI</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    
-        <section class="about">
-            <div class="container">
-                <h2>Sobre a WVGA</h2>
-                <p>
-                    Fundada com o propósito de transformar a realidade contábil de empresas e profissionais, a WVGA Contabilidade e Consultoria carrega em seu DNA a inovação, a seriedade e o compromisso com o sucesso de cada cliente.
-                    <br><br>
-                    Com uma equipe altamente qualificada, aliamos tradição e tecnologia para oferecer soluções completas em assessoria contábil, gestão de pessoal e abertura de novos negócios.
-                    <br><br>
-                    Mais do que números, entregamos confiança, segurança e suporte para que você possa focar no crescimento do seu empreendimento.
-                </p>
-            </div>
-        </section>
-    
-        <section class="contact">
-            <div class="container">
-                <h2>Conecte-se Conosco</h2>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/wvgacontabilidade/" target="_blank" class="btn instagram">
-                        <i class="fab fa-instagram"></i> Instagram
-                    </a>
-                    <a href="https://api.whatsapp.com/send/?phone=%2B555521970647204&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+de+contabilidade!" target="_blank" class="btn whatsapp">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="https://www.facebook.com/wvgacontabilidade" target="_blank" class="btn facebook">
-                        <i class="fab fa-facebook"></i> Facebook
-                    </a>
-                </div>
-            </div>
-        </section>
-    
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; 2025 WVGA Contabilidade e Consultoria. Todos os direitos reservados.</p>
-            </div>
-        </footer>
-    
-    </body>
-    </html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WVGA Contabilidade e Consultoria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PARTÍCULAS DE FUNDO -->
+  <div class="bg-grid"></div>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">W</span>
+        <span>WVGA <em>Contabilidade</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato" class="btn-nav">Falar Conosco</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Contabilidade & Consultoria
+        </div>
+        <h1>
+          Sua empresa<br>
+          em <span class="hl">mãos seguras</span>
+        </h1>
+        <p class="hero-sub">
+          Soluções completas em contabilidade, gestão de pessoal e abertura de negócios. Aliamos tradição e tecnologia para o crescimento da sua empresa.
+        </p>
+        <div class="hero-btns">
+          <a href="https://api.whatsapp.com/send/?phone=%2B555521970647204&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+de+contabilidade!" target="_blank" class="btn-primary">
+            <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+          </a>
+          <a href="#servicos" class="btn-outline">Ver serviços</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>+500</strong>
+            <span>Clientes atendidos</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>10+</strong>
+            <span>Anos de experiência</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Comprometimento</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="image-frame">
+          <img src="02.webp" alt="Equipe WVGA Contabilidade" />
+          <div class="image-badge">
+            <i class="fas fa-shield-halved"></i>
+            <span>Empresa de confiança</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVIÇOS ── -->
+  <section class="services" id="servicos">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <p class="section-label">O que oferecemos</p>
+        <h2>Soluções completas<br>para o seu negócio</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="card-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3>Assessoria Contábil</h3>
+          <p>Gestão contábil completa com relatórios precisos, balanços e demonstrativos financeiros para tomada de decisões estratégicas.</p>
+        </div>
+
+        <div class="service-card reveal" style="animation-delay:.1s">
+          <div class="card-icon" style="--ci: #0ea5e9">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Departamento de Pessoal</h3>
+          <p>Folha de pagamento, admissões, demissões, férias, FGTS e todos os processos de RH com total conformidade legal.</p>
+        </div>
+
+        <div class="service-card reveal" style="animation-delay:.2s">
+          <div class="card-icon" style="--ci: #a855f7">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Recursos Humanos</h3>
+          <p>Suporte completo em processos de RH, recrutamento, treinamentos e compliance trabalhista para sua equipe.</p>
+        </div>
+
+        <div class="service-card reveal" style="animation-delay:.3s">
+          <div class="card-icon" style="--ci: #f97316">
+            <i class="fas fa-store"></i>
+          </div>
+          <h3>Abertura de MEI</h3>
+          <p>Orientamos e acompanhamos todo o processo de abertura do seu MEI ou empresa, de forma rápida, segura e sem burocracia.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SOBRE ── -->
+  <section class="about" id="sobre">
+    <div class="section-inner about-inner">
+      <div class="about-visual reveal">
+        <div class="about-card">
+          <i class="fas fa-trophy about-icon"></i>
+          <strong>Referência em contabilidade</strong>
+          <span>no Rio Grande do Sul</span>
+        </div>
+        <div class="about-pillars">
+          <div class="pillar">
+            <i class="fas fa-lightbulb"></i>
+            <span>Inovação</span>
+          </div>
+          <div class="pillar">
+            <i class="fas fa-handshake"></i>
+            <span>Seriedade</span>
+          </div>
+          <div class="pillar">
+            <i class="fas fa-heart"></i>
+            <span>Compromisso</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal" style="animation-delay:.15s">
+        <p class="section-label">Quem somos</p>
+        <h2>Sobre a WVGA</h2>
+        <p>
+          Fundada com o propósito de transformar a realidade contábil de empresas e profissionais, a <strong>WVGA Contabilidade e Consultoria</strong> carrega em seu DNA a inovação, a seriedade e o compromisso com o sucesso de cada cliente.
+        </p>
+        <p>
+          Com uma equipe altamente qualificada, aliamos tradição e tecnologia para oferecer soluções completas em assessoria contábil, gestão de pessoal e abertura de novos negócios.
+        </p>
+        <p>
+          Mais do que números, entregamos <strong>confiança, segurança e suporte</strong> para que você possa focar no crescimento do seu empreendimento.
+        </p>
+        <a href="#contato" class="btn-primary" style="margin-top: 1.5rem; display: inline-flex;">
+          Conhecer mais <i class="fas fa-arrow-right" style="font-size:13px"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTATO / CTA ── -->
+  <section class="contact" id="contato">
+    <div class="section-inner">
+      <div class="cta-box reveal">
+        <p class="section-label" style="justify-content:center">Conecte-se conosco</p>
+        <h2>Pronto para simplificar<br>sua <span class="hl">contabilidade</span>?</h2>
+        <p class="cta-sub">Entre em contato pelo canal de sua preferência. Respondemos rápido e sem enrolação.</p>
+        <div class="social-links">
+          <a href="https://api.whatsapp.com/send/?phone=%2B555521970647204&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+de+contabilidade!" target="_blank" class="social-btn whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://www.instagram.com/wvgacontabilidade/" target="_blank" class="social-btn instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/wvgacontabilidade" target="_blank" class="social-btn facebook">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">W</span>
+        <span>WVGA <em>Contabilidade</em></span>
+      </div>
+      <p>&copy; 2025 WVGA Contabilidade e Consultoria. Todos os direitos reservados.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/wvgacontabilidade/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B555521970647204&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+de+contabilidade!" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/wvgacontabilidade" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+
